@@ -1,0 +1,334 @@
+
+@font-face {
+    font-family:Netflix;
+    src: url("/fonts/BebasNeue-Regular.ttf");
+ } 
+*{
+    margin:0;
+    padding: 0;
+    
+}
+body{
+    background-color: white;
+    overflow-x: hidden;
+}
+
+header
+{
+    position: fixed;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+z-index: 3;
+    
+}
+header h1 {
+    font-family: Netflix;
+    color: red;
+    font-size: 3em;
+}
+header button{
+    position: absolute;
+    width: 100px;
+    height:50px;
+    background-color: red;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    right: 3%;
+    top: 25px;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+/* -------------------------------primeira SECTION------------------------*/
+.primeiraParte {
+    position: relative;
+    width: 100%;
+    height:700px;
+    border-bottom: 10px solid gray;
+overflow: hidden;
+}
+
+.textos{
+    position: absolute;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+flex-direction: column;
+text-align: center;
+align-items: center;
+z-index: 2;
+
+}
+
+
+.textos h1{
+ font-weight: 700;
+ color: white;
+ font-size: 5em;
+ 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.textos h3{
+
+    font-weight: 100;
+ color: white;
+ font-size: 2em;
+ 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.textos button{
+    margin-top: 20px;
+    height: 100px;
+    width: 250px;
+    background-color: red;
+    color: white;
+    font-size: 2em;
+}
+
+
+
+.imgSection {
+position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("/imgs/primeiraparte.jpg");
+    filter:blur(3px);
+   
+}
+
+/* ------------------------------- FIM DA primeira SECTION------------------------*/
+
+/* -------------------------------SEGUNDA SECTION------------------------*/
+
+.segundaParte{
+
+    background-color: black;
+    height: 400px;
+    align-items: center;
+    color: white;
+    justify-content: center;
+display: flex;
+border-bottom: 10px solid gray;
+    
+}
+.segundaParte img{
+    width: 20%;
+    height: 70%;
+    margin-left: 20px;
+}
+.textosDentro
+{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.textosDentro h1{
+    font-weight: 500;
+    color: white;
+    font-size: 3.5em;
+    
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+   
+   .textosDentro h3{
+   
+       font-weight: 100;
+    color: white;
+    font-size: 1.5em;
+    
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+
+
+/* -------------------------------FIM DA SEGUNDA SECTION------------------------*/
+
+/* -------------------------------TERCEIRA SECTION------------------------*/
+
+.terceiraParte{
+
+    background-color: black;
+    height: 400px;
+    align-items: center;
+   
+    color: white;
+    justify-content: center;
+display: flex;
+flex-direction: row-reverse;
+border-bottom: 10px solid gray;
+}
+.terceiraParte img{
+    width: 20%;
+    height: 80%;
+    margin-right:10px;
+}
+/* ------------------------------- FIM DA TERCEIRA SECTION------------------------*/
+
+footer{
+    align-items: center;
+background-color: black;
+color:white;
+text-align: center;
+padding: 30px;
+display: flex;
+flex-direction: column;
+}
+
+footer h1 {
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+footer .btnVamosla button{
+    padding: 10px;
+    margin-top: 50px;
+    background-color: red;
+    height: 75px;
+    width: 250px;
+    color:white;
+    font-size: 2em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+
+}
+.perguntas 
+{ position: relative;
+    background-color: rgb(41, 41, 41);
+    height: 70px;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    cursor:pointer;
+}
+.perguntas h1
+{ position: absolute;
+    font-size: 1.5em;
+    top :24%;
+    left:3%
+}
+.perguntas button{
+    position: absolute;
+    right: 3%;
+    top:24%;
+    font-size: 2em;
+    background-color: transparent;
+    border: none;
+    color: white;
+    z-index: 2;
+}
+
+@media screen and (max-width: 1440px) {
+
+    .textos h1{
+        font-weight: 700;
+        color: white;
+        font-size: 3.5em;
+    
+        margin-top: 60px;
+        
+           font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       }
+       
+       .textos button{
+        margin-top: 20px;
+        height: 100px;
+        width: 200px;
+        background-color: red;
+        color: white;
+        font-size: 2em;
+    }
+    
+    /* -------------------------------SEGUNDA SECTION------------------------*/
+
+.segundaParte{
+
+    background-color: black;
+    height: 400px;
+    align-items: center;
+    text-align: center;
+    color: white;
+    justify-content: center;
+display: flex;
+border-bottom: 10px solid gray;
+padding: 60px;
+    
+}
+.segundaParte img{
+    width: 40%;
+    height: 70%;
+    margin-left: 20px;
+}
+.textosDentro
+{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.textosDentro h1{
+    font-weight: 500;
+    color: white;
+    font-size: 2.5em;
+    
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+   
+   .textosDentro h3{
+   
+       font-weight: 100;
+    color: white;
+    font-size: 1.5em;
+    
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+/* -------------------------------TERCEIRA SECTION------------------------*/
+
+.terceiraParte{
+
+    background-color: black;
+    height: 400px;
+    align-items: center;
+    text-align: center;
+    color: white;
+    justify-content: center;
+display: flex;
+flex-direction: row-reverse;
+border-bottom: 10px solid gray;
+padding: 60px;
+}
+.terceiraParte img{
+    width: 20%;
+    height: 80%;
+    margin-right:10px;
+}
+/* ------------------------------- FIM DA TERCEIRA SECTION------------------------*/
+
+header button{
+    position: absolute;
+    width: 100px;
+    height:50px;
+    background-color: red;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    right: 7%;
+    top: 25px;
+}
+
+  }
+
+    
